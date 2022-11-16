@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua localizaçao</title>
+</head>
+<body>
+    <h1>Sistema de onde você mora</h1>
+    Qual País você mora?:<input type="text" name="ipais" id="ipais">
+    <input type="button" value="Verificar" onclick="calc()">
+    <div id="Resposta">
+
+    </div>
+
+    <script>
+        function calc() {
+            var pais = window.document.getElementById('ipais')
+            var res = window.document.getElementById('Resposta')
+            if (pais == 'Brasil') {
+                Resposta.innerHTML = '<p>Você mora no <strong>Brasil</strong></p>'
+            } else {
+                Resposta.innerHTML = '<p>Você é <strong>Estrangeiro</strong></p>'
+            }
+        }
+    </script>
+</body>
+</html>
